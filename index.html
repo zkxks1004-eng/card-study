@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>카드 추천 프로젝트 쉽게 보기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html" aria-current="page">홈</a>
+    <a href="step1.html">1단계 입력 화면</a>
+    <a href="step2.html">2단계 자동 저장</a>
+    <a href="step3.html">3단계 SQL DB</a>
+    <a href="step4.html">4단계 카드 정보 비교</a>
+    <a href="step5.html">5단계 AI 추천</a>
+    <a href="glossary.html">용어 사전</a>
+  </nav>
+
+  <main>
+    <h1>카드 추천 프로젝트, 처음부터 쉽게</h1>
+    <p class="lead">코딩을 몰라도 괜찮습니다. 흐름만 따라오시면 됩니다.</p>
+
+    <div class="box">
+      <span class="label">한 줄 요약</span>
+      <p>고객이 웹 화면에 적은 정보를 자동으로 모아 두고, AI(사람처럼 판단하는 컴퓨터 프로그램)가 카드 정보와 비교해서 맞는 카드를 추천해 주는 개인 프로젝트입니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">전체 그림</span>
+      <div class="flow">
+        <div class="node">입력 화면<small>고객이 정보 입력</small></div>
+        <div class="arrow">→<span>자동 저장</span></div>
+        <div class="node">구글 시트<small>온라인 표</small></div>
+        <div class="arrow">→<span>옮겨 담기</span></div>
+        <div class="node">SQL DB<small>고객 정보 창고</small></div>
+        <div class="arrow">→<span>읽기</span></div>
+        <div class="node">Claude<small>AI가 비교·판단</small></div>
+        <div class="arrow">→<span>보여 주기</span></div>
+        <div class="node">추천 화면<small>고객이 결과 확인</small></div>
+      </div>
+      <div class="branch">
+        <div class="node">카드 정보 DB<small>미리 모아 둔 카드 정보 · Claude가 함께 읽음 ↑</small></div>
+      </div>
+      <p class="note" style="margin-top:10px">DB(데이터베이스, 정보를 정리해 보관하는 창고)가 두 개라는 점이 핵심입니다. 고객 정보 창고와 카드 정보 창고를 AI가 같이 봅니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">단계별로 보기</span>
+      <ul class="steps">
+        <li><a href="step1.html">1단계 입력 화면과 구글 시트</a><br>고객이 화면에 정보를 적고, 그 내용이 온라인 표에 쌓입니다.</li>
+        <li><a href="step2.html">2단계 자동 저장</a><br>사람이 손으로 옮기지 않아도 저장되게 만든 장치입니다.</li>
+        <li><a href="step3.html">3단계 SQL DB</a><br>표에 쌓인 정보를 더 튼튼한 창고로 옮깁니다.</li>
+        <li><a href="step4.html">4단계 카드 정보 DB 비교</a><br>미리 모아 둔 카드 정보 창고가 따로 있습니다.</li>
+        <li><a href="step5.html">5단계 Claude API 추천</a><br>AI가 두 창고를 읽고 비교해서 카드를 추천합니다. 마지막에 퀴즈가 있습니다.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <span class="label">읽는 법</span>
+      <p>위의 메뉴를 왼쪽부터 차례로 누르시면 됩니다. 모르는 말은 <a href="glossary.html">용어 사전</a>에 모아 두었습니다.</p>
+    </div>
+
+    <div class="pager">
+      <span></span>
+      <a href="step1.html">다음: 1단계 입력 화면 →</a>
+    </div>
+  </main>
+
+  <footer>이 사이트에 나오는 예시는 이해를 돕기 위한 가상의 예시입니다. 실제 고객정보는 담지 않았습니다.</footer>
+</body>
+</html>

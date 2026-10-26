@@ -1,0 +1,235 @@
+:root {
+  --bg: #f6f7f9;
+  --card: #ffffff;
+  --text: #1d1d1f;
+  --muted: #5f6368;
+  --line: #d9dce1;
+  --accent: #2f5bd3;
+  --accent-soft: #e9eefc;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+  word-break: keep-all;
+}
+
+/* 상단 메뉴 */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.topnav a {
+  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+}
+.topnav a:hover { background: var(--accent-soft); }
+.topnav a[aria-current="page"] {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 16px 56px;
+}
+
+h1 { font-size: 26px; line-height: 1.4; margin: 0 0 6px; }
+h2 { font-size: 18px; margin: 0 0 8px; }
+.lead { color: var(--muted); margin: 0 0 8px; }
+
+.box {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin: 16px 0;
+}
+.box p { margin: 0; }
+.box p + p { margin-top: 6px; }
+
+.label {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.note {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* 흐름도 */
+.flow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.node {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+  padding: 10px 6px;
+  border: 1.5px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.45;
+}
+.node small {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+}
+.node.now {
+  border: 3px solid var(--accent);
+  background: var(--accent-soft);
+  font-weight: 700;
+}
+.node.now::before {
+  content: "▼ 지금 여기";
+  display: block;
+  font-size: 12px;
+  color: var(--accent);
+}
+.arrow {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-weight: 700;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.2;
+}
+.arrow span { display: block; font-size: 11px; font-weight: 400; }
+
+/* 홈 흐름도의 곁가지(카드 정보 DB) */
+.branch {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.branch .node {
+  flex: 0 1 300px;
+  border-style: dashed;
+}
+
+/* 표 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+}
+th, td {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--line);
+}
+th { background: #f0f2f5; font-weight: 700; }
+td:first-child { font-weight: 700; white-space: nowrap; }
+
+/* 가상 예시 표 */
+.sample { margin-top: 10px; }
+.sample caption {
+  text-align: left;
+  font-size: 13px;
+  color: var(--muted);
+  padding-bottom: 4px;
+}
+
+/* 단계 목록 (홈) */
+.steps { list-style: none; padding: 0; margin: 0; }
+.steps li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.steps li:last-child { border-bottom: none; }
+.steps a { color: var(--accent); font-weight: 700; text-decoration: none; }
+
+/* 이전/다음 */
+.pager {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 28px;
+}
+.pager a {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+}
+.pager a:last-child { text-align: right; }
+.pager a:hover { border-color: var(--accent); }
+
+/* 퀴즈 */
+.quiz-q { margin-top: 18px; }
+.quiz-q:first-of-type { margin-top: 0; }
+.quiz-q p.q { font-weight: 700; margin-bottom: 8px; }
+.choices { display: flex; flex-direction: column; gap: 6px; }
+.choices button {
+  text-align: left;
+  font: inherit;
+  color: var(--text);
+  padding: 10px 12px;
+  border: 1.5px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+.choices button:hover { border-color: var(--accent); }
+.choices button:disabled { cursor: default; }
+.choices button.right { border: 3px solid var(--accent); font-weight: 700; }
+.choices button.wrong { border-style: dashed; color: var(--muted); }
+.feedback {
+  display: none;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  font-size: 15px;
+}
+.feedback.show { display: block; }
+
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px 32px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* 휴대폰: 흐름도를 세로로 */
+@media (max-width: 600px) {
+  h1 { font-size: 22px; }
+  .flow { flex-direction: column; align-items: stretch; }
+  .node { flex: none; }
+  .arrow { font-size: 0; }
+  .arrow::before { content: "↓"; display: block; font-size: 15px; }
+  .arrow span { display: inline; font-size: 11px; }
+  .branch { justify-content: stretch; }
+  .branch .node { flex: 1; }
+}

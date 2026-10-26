@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4단계 카드 정보 DB 비교</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html">홈</a>
+    <a href="step1.html">1단계 입력 화면</a>
+    <a href="step2.html">2단계 자동 저장</a>
+    <a href="step3.html">3단계 SQL DB</a>
+    <a href="step4.html" aria-current="page">4단계 카드 정보 비교</a>
+    <a href="step5.html">5단계 AI 추천</a>
+    <a href="glossary.html">용어 사전</a>
+  </nav>
+
+  <main>
+    <h1>4단계 카드 정보 DB 비교</h1>
+    <p class="lead">창고가 하나 더 있습니다. 카드 정보 창고입니다.</p>
+
+    <div class="box">
+      <div class="flow">
+        <div class="node">입력 화면<small>+ 구글 시트</small></div>
+        <div class="arrow">→</div>
+        <div class="node">자동 저장</div>
+        <div class="arrow">→</div>
+        <div class="node">SQL DB</div>
+        <div class="arrow">→</div>
+        <div class="node now">카드 정보 DB</div>
+        <div class="arrow">→</div>
+        <div class="node">Claude 추천</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="label">이 단계에서 하는 일</span>
+      <p>카드 정보는 고객 정보와 다른 DB(데이터베이스, 정보 창고)에 따로 들어 있습니다.</p>
+      <p>"고객이 원하는 것"과 "카드가 주는 것"을 나란히 놓고 비교할 수 있도록 두 창고를 준비하는 단계입니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">쉬운 비유</span>
+      <p>한 손에는 손님 주문서, 다른 손에는 메뉴판을 든 것과 같습니다. 둘을 같이 봐야 "이 손님에게는 이 메뉴"를 고를 수 있습니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">실제 프로젝트에서는</span>
+      <p>카드 정보는 이미 크롤링(프로그램이 웹사이트를 돌며 정보를 자동으로 모으는 것)해 둔 다른 DB에 있었습니다.</p>
+      <p>두 창고를 실제로 읽고 비교하는 일은 다음 5단계에서 Claude(AI)가 맡습니다.</p>
+      <table class="sample">
+        <caption>가상의 예시: 두 창고를 나란히 본 모습</caption>
+        <tr><th>고객 정보 창고</th><th>카드 정보 창고</th></tr>
+        <tr><td>고객 A: 카페 할인 원함</td><td>카드 가: 카페 할인 있음</td></tr>
+        <tr><td>고객 B: 교통비 할인 원함</td><td>카드 나: 교통비 할인 있음</td></tr>
+      </table>
+    </div>
+
+    <div class="box">
+      <span class="label">용어 풀이</span>
+      <table>
+        <tr><th>용어</th><th>쉬운 뜻</th></tr>
+        <tr><td>크롤링</td><td>프로그램이 여러 웹 페이지를 돌아다니며 필요한 정보를 자동으로 모으는 것입니다.</td></tr>
+        <tr><td>카드 정보 DB</td><td>미리 모아 둔 카드 정보를 담은 창고입니다.</td></tr>
+        <tr><td>비교</td><td>두 정보를 나란히 놓고 맞는 것과 다른 것을 가려내는 일입니다.</td></tr>
+      </table>
+    </div>
+
+    <div class="pager">
+      <a href="step3.html">← 이전: 3단계 SQL DB</a>
+      <a href="step5.html">다음: 5단계 AI 추천 →</a>
+    </div>
+  </main>
+
+  <footer>이 사이트에 나오는 예시는 이해를 돕기 위한 가상의 예시입니다. 실제 고객정보는 담지 않았습니다.</footer>
+</body>
+</html>

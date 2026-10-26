@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1단계 입력 화면과 구글 시트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html">홈</a>
+    <a href="step1.html" aria-current="page">1단계 입력 화면</a>
+    <a href="step2.html">2단계 자동 저장</a>
+    <a href="step3.html">3단계 SQL DB</a>
+    <a href="step4.html">4단계 카드 정보 비교</a>
+    <a href="step5.html">5단계 AI 추천</a>
+    <a href="glossary.html">용어 사전</a>
+  </nav>
+
+  <main>
+    <h1>1단계 입력 화면과 구글 시트</h1>
+    <p class="lead">모든 일은 고객이 정보를 적는 데서 시작합니다.</p>
+
+    <div class="box">
+      <div class="flow">
+        <div class="node now">입력 화면<small>+ 구글 시트</small></div>
+        <div class="arrow">→</div>
+        <div class="node">자동 저장</div>
+        <div class="arrow">→</div>
+        <div class="node">SQL DB</div>
+        <div class="arrow">→</div>
+        <div class="node">카드 정보 DB</div>
+        <div class="arrow">→</div>
+        <div class="node">Claude 추천</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="label">이 단계에서 하는 일</span>
+      <p>HTML(웹 페이지를 만드는 언어)로 만든 화면에 고객정보와 카드 혜택 등을 입력합니다.</p>
+      <p>입력한 내용은 구글 시트(인터넷에서 쓰는 구글의 표 프로그램)에 한 줄씩 쌓입니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">쉬운 비유</span>
+      <p>가게 앞에 놓인 신청서에 손님이 이름과 원하는 것을 적으면, 그 내용이 장부에 한 줄씩 옮겨 적히는 것과 같습니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">실제 프로젝트에서는</span>
+      <p>입력 화면은 HTML로 만든 사이트입니다.</p>
+      <p>여기에 고객정보와 카드 혜택 등을 입력하면 구글 시트에 자동으로 저장됩니다.</p>
+      <p>"자동으로"가 어떻게 가능한지는 2단계에서 봅니다.</p>
+      <table class="sample">
+        <caption>가상의 예시: 시트에 쌓이는 모양 (실제 칸 구성과 다를 수 있습니다)</caption>
+        <tr><th>입력 순서</th><th>고객</th><th>원하는 혜택</th></tr>
+        <tr><td>1</td><td>고객 A</td><td>카페 할인</td></tr>
+        <tr><td>2</td><td>고객 B</td><td>교통비 할인</td></tr>
+      </table>
+    </div>
+
+    <div class="box">
+      <span class="label">용어 풀이</span>
+      <table>
+        <tr><th>용어</th><th>쉬운 뜻</th></tr>
+        <tr><td>HTML</td><td>웹 페이지의 글자, 입력 칸, 버튼을 배치하는 언어입니다.</td></tr>
+        <tr><td>입력 칸</td><td>화면에서 글자를 적어 넣는 네모 칸입니다.</td></tr>
+        <tr><td>구글 시트</td><td>인터넷에서 쓰는 표 프로그램입니다. 엑셀과 비슷합니다.</td></tr>
+        <tr><td>데이터</td><td>컴퓨터에 저장된 정보 조각입니다. 이름, 숫자 같은 것들입니다.</td></tr>
+      </table>
+    </div>
+
+    <div class="pager">
+      <a href="index.html">← 이전: 홈</a>
+      <a href="step2.html">다음: 2단계 자동 저장 →</a>
+    </div>
+  </main>
+
+  <footer>이 사이트에 나오는 예시는 이해를 돕기 위한 가상의 예시입니다. 실제 고객정보는 담지 않았습니다.</footer>
+</body>
+</html>

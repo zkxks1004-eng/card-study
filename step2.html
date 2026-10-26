@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2단계 자동 저장</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <a href="index.html">홈</a>
+    <a href="step1.html">1단계 입력 화면</a>
+    <a href="step2.html" aria-current="page">2단계 자동 저장</a>
+    <a href="step3.html">3단계 SQL DB</a>
+    <a href="step4.html">4단계 카드 정보 비교</a>
+    <a href="step5.html">5단계 AI 추천</a>
+    <a href="glossary.html">용어 사전</a>
+  </nav>
+
+  <main>
+    <h1>2단계 자동 저장</h1>
+    <p class="lead">파이썬, 앱스크립트, 트리거가 함께 일합니다.</p>
+
+    <div class="box">
+      <div class="flow">
+        <div class="node">입력 화면<small>+ 구글 시트</small></div>
+        <div class="arrow">→</div>
+        <div class="node now">자동 저장</div>
+        <div class="arrow">→</div>
+        <div class="node">SQL DB</div>
+        <div class="arrow">→</div>
+        <div class="node">카드 정보 DB</div>
+        <div class="arrow">→</div>
+        <div class="node">Claude 추천</div>
+      </div>
+    </div>
+
+    <div class="box">
+      <span class="label">이 단계에서 하는 일</span>
+      <p>고객이 입력한 내용을 사람이 복사해서 붙여 넣지 않아도 구글 시트에 저장되게 만듭니다.</p>
+      <p>이렇게 사람 손 없이 저절로 돌아가게 하는 것을 자동화라고 부릅니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">쉬운 비유</span>
+      <p>현관문이 열리면 저절로 불이 켜지는 센서등과 비슷합니다. "문이 열리면"이 신호이고, "불이 켜진다"가 그때 하는 일입니다. 이 신호 장치를 트리거라고 부릅니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">실제 프로젝트에서는</span>
+      <p>자동 저장은 파이썬(사람이 읽기 쉬운 프로그래밍 언어)과 구글 앱스크립트(구글 시트 같은 구글 도구 안에서 돌아가는 작은 프로그램)의 트리거(정해진 일이 생기면 자동으로 실행시키는 장치)로 만들었습니다.</p>
+      <p>두 도구가 구체적으로 어떻게 일을 나눴는지는 이 사이트에서 다루지 않습니다. "신호가 오면 저장이 저절로 일어난다"는 흐름만 기억하시면 됩니다.</p>
+    </div>
+
+    <div class="box">
+      <span class="label">용어 풀이</span>
+      <table>
+        <tr><th>용어</th><th>쉬운 뜻</th></tr>
+        <tr><td>파이썬</td><td>컴퓨터에게 일을 시키는 언어 중 하나입니다. 문장이 비교적 읽기 쉽습니다.</td></tr>
+        <tr><td>구글 앱스크립트</td><td>구글 시트 같은 구글 도구에 붙여 쓰는 작은 프로그램입니다.</td></tr>
+        <tr><td>트리거</td><td>"이런 일이 생기면 이걸 실행해"라고 미리 걸어 두는 방아쇠입니다.</td></tr>
+        <tr><td>자동화</td><td>사람이 매번 하던 일을 컴퓨터가 저절로 하게 만드는 것입니다.</td></tr>
+      </table>
+    </div>
+
+    <div class="pager">
+      <a href="step1.html">← 이전: 1단계 입력 화면</a>
+      <a href="step3.html">다음: 3단계 SQL DB →</a>
+    </div>
+  </main>
+
+  <footer>이 사이트에 나오는 예시는 이해를 돕기 위한 가상의 예시입니다. 실제 고객정보는 담지 않았습니다.</footer>
+</body>
+</html>
